@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetBrains Mono:pixelsize=18:antialias=true:autohint=true";
+static char *font = "Source Code Pro:pixelsize=18:antialias=true:autohint=true";
 static int borderpx = 0;
 
 /*
@@ -255,6 +255,7 @@ static uint ignoremod = Mod2Mask|XK_SWITCH_MOD;
  * world. Please decide about changes wisely.
  */
 static Key key[] = {
+	{ XK_Super_L, XK_ANY_MOD, "", 0, 0},
 	/* keysym           mask            string      appkey appcursor */
 	{ XK_KP_Home,       ShiftMask,      "\033[2J",       0,   -1},
 	{ XK_KP_Home,       ShiftMask,      "\033[1;2H",     0,   +1},
